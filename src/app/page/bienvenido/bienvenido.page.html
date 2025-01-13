@@ -1,0 +1,28 @@
+<ion-content class="container">
+  <ion-header>
+    <ion-toolbar class="header">
+      <ion-buttons slot="start">
+        <ion-back-button></ion-back-button>
+      </ion-buttons>
+      <ion-title class="header-title">¡BIENVENIDO!</ion-title>
+    </ion-toolbar>
+  </ion-header>
+
+  <div class="welcome-section">
+    <p>[nombre Alumno]</p>
+  </div>
+
+  <div class="buttons-section">
+    <ion-button expand="block" class="custom-button">Pedir Viaje</ion-button>
+    <ion-button expand="block" class="custom-button">Realizar Viaje</ion-button>
+  </div>
+
+  <div class="logout-section">
+    <ion-button expand="block" class="custom-button logout-button" (click)="logout()">Log Out</ion-button>
+
+  </div>
+
+  <div class="footer">
+    <ion-icon name="person-circle-outline"></ion-icon>
+  </div>
+</ion-content>

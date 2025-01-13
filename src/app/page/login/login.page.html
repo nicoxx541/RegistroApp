@@ -1,0 +1,29 @@
+<ion-content class="ion-padding login-container">
+  <div class="logo-container">
+    <img src="assets/imgs/logo.png" alt="Logo TellevoApp" class="logo">
+    <h1 class="app-title">TELLEVOAPP</h1>
+  </div>
+
+  <div class="form-container">
+    <ion-item>
+      <ion-icon slot="start" name="mail-outline"></ion-icon>
+      <ion-input type="email" placeholder="Email"></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-icon slot="start" name="lock-closed-outline"></ion-icon>
+      <ion-input type="password" placeholder="Contraseña"></ion-input>
+    </ion-item>
+
+    <ion-text class="forgot-password" color="medium">
+      <a href="/recuperar">¿Olvidaste tu contraseña?</a>
+    </ion-text>
+
+    <ion-button expand="block" color="primary" class="login-button" (click)="bienvenido()">Ingresar</ion-button>
+    <ion-button expand="block" class="custom-button logout-button" >Log Out</ion-button>
+
+    <ion-text class="register">
+      <p>¿No tienes una cuenta? <a href="/registro">Regístrate</a></p>
+    </ion-text>
+  </div>
+</ion-content>
